@@ -105,7 +105,11 @@ int main(){
                 printf("Listar:\n");
                 
                 int opcListagem;
-               
+                
+                if (contadorLivros == 0) {
+                    printf("Nenhum livro cadastrado no acervo.\n");
+                    break;
+                }
                 
                 printf("\n--- Submenu de Listagem ---\n");
                 printf("1 - Listar todos os livros\n");
@@ -121,7 +125,10 @@ int main(){
                     
                     if(opcListagem == 1){  
                         exibir = 1;
-                        
+                    } else if( opcListagem == 2 && status[i] == 1){
+                        exibir = 1;
+                    } else if ( opcListagem == 3 && status[i == 0]){
+                        exibir = 1;
                     }
                     
                     if(exibir){
